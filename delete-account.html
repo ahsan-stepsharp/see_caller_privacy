@@ -1,1 +1,42 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Deletion Portal - See Caller</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 40px 20px; text-align: center; }
+        h1 { color: #B42318; }
+        .card { border: 1px solid #eee; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-top: 30px; }
+        input[type="email"] { width: 100%; padding: 12px; margin: 20px 0; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; }
+        button { background-color: #B42318; color: white; border: none; padding: 12px 24px; border-radius: 6px; cursor: pointer; font-weight: bold; width: 100%; }
+        button:hover { background-color: #911c13; }
+        .info { font-size: 0.9em; color: #666; margin-top: 20px; text-align: left; }
+    </style>
+</head>
+<body>
+    <h1>Data Deletion Portal</h1>
+    <p>Request the permanent removal of your See Caller account and all associated identification data.</p>
+
+    <div class="card">
+        <p><strong>Enter the Google Email address used with the app:</strong></p>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <input type="email" name="Email" placeholder="example@gmail.com" required>
+            <input type="hidden" name="Subject" value="Data Deletion Request">
+            <button type="submit">Submit Deletion Request</button>
+        </form>
+
+        <div class="info">
+            <p><strong>What happens next?</strong></p>
+            <ul>
+                <li>Your request will be processed within 48-72 hours.</li>
+                <li>All hashed contact contributions linked to this email will be purged from our shared index.</li>
+                <li>This action is irreversible.</li>
+            </ul>
+        </div>
+    </div>
+
+    <p style="margin-top: 40px;"><a href="privacy.html">Back to Privacy Policy</a></p>
+</body>
+</html>
