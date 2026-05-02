@@ -16,31 +16,48 @@
     <h1>Privacy Policy</h1>
     <p>Last Updated: May 2026</p>
 
-    <p>See Caller ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+    <p>See Caller ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, share, retain, and delete information when you use our mobile application.</p>
 
     <h2>1. Information We Collect</h2>
     <div class="highlight">
-        <strong>Contact Data:</strong> To provide caller identification services, the app processes your saved contacts. We normalize and hash phone numbers locally on your device before uploading them to our shared reverse-lookup index.
+        <strong>Contact Data:</strong> Contact access is optional. If you enable it, the app reads saved contact names and phone numbers to recognize callers saved on your device. When you refresh contacts, we normalize phone numbers and create protected one-way hashes locally before sending contribution records to our backend.
     </div>
-    <p>We collect your <strong>phone number</strong> through phone authentication to create your account and help manage account access and deletion requests.</p>
+    <p>We may collect or process the following data:</p>
+    <ul>
+        <li><strong>Account phone number:</strong> Used for phone authentication, account access, and account deletion requests.</li>
+        <li><strong>Contact contribution data:</strong> Contact display names or caller labels and hashed phone-number identifiers may be sent to improve shared caller lookup. Raw contact phone numbers are not intended to be stored by our backend.</li>
+        <li><strong>Caller lookup data:</strong> Phone-number hashes, lookup results, caller labels, confidence signals, reports, and lookup history may be stored to provide caller identification and abuse reporting features.</li>
+        <li><strong>Device/session data:</strong> Installation identifier, platform, app version, and device model may be used for authentication, session security, diagnostics, and fraud prevention.</li>
+        <li><strong>Notifications:</strong> Notification permission is used to show incoming caller identification results.</li>
+    </ul>
 
     <h2>2. How We Use Data</h2>
     <ul>
-        <li><strong>Identification:</strong> Hashed contact data is used to match incoming calls with known names for all users.</li>
-        <li><strong>Account Management:</strong> Your phone number is used to uniquely identify your account so you can manage or delete it later.</li>
+        <li><strong>Caller identification:</strong> Protected phone identifiers and caller labels are used to match incoming or manually entered numbers with available caller information.</li>
+        <li><strong>Saved caller matching:</strong> If contacts are enabled, local contact data helps identify callers already saved on your device.</li>
+        <li><strong>Shared caller index:</strong> Contact contribution records and reports may improve caller lookup for users when a reliable signal is available.</li>
+        <li><strong>Account management:</strong> Your phone number is used to identify your account so you can sign in, manage sessions, and request deletion.</li>
+        <li><strong>Security and reliability:</strong> Device/session data helps protect accounts, maintain service integrity, and troubleshoot issues.</li>
     </ul>
 
     <h2>3. Data Sharing</h2>
-    <p>We do not sell, rent, or share your personal information or contact list with third parties for marketing purposes. Data is only used within the See Caller ecosystem for the sole purpose of caller identification.</p>
+    <p>We do not sell or rent your personal information or contact list for marketing purposes. Data is used within the See Caller service to provide caller identification, account security, reporting, and deletion support. Caller labels derived from contribution records may be shown to other See Caller users as lookup results when available.</p>
 
-    <h2>4. Your Rights & Data Deletion</h2>
-    <p>You have the "Right to be Forgotten." You can delete your account and all associated data directly within the app settings or via our <a href="delete-account.html">Data Deletion Portal</a>.</p>
+    <h2>4. Permissions</h2>
+    <ul>
+        <li><strong>Contacts:</strong> Optional. Used for saved caller matching and optional contribution refreshes.</li>
+        <li><strong>Notifications:</strong> Optional but recommended. Used to display incoming caller alerts.</li>
+        <li><strong>Caller ID service:</strong> Android Call Screening access is used to inspect incoming numbers and show caller identification results. The app does not request Call Log or SMS permissions.</li>
+    </ul>
 
-    <h2>5. Contact Us</h2>
-    <p>If you have questions about this policy, please contact us at <a href="mailto:maali22786@gmail.com">maali22786@gmail.com</a>.</p>
+    <h2>5. Data Retention & Deletion</h2>
+    <p>You can delete your account and associated data directly within the app settings or via our <a href="delete-account.html">Account Deletion Portal</a>. When an account deletion request is verified, we delete or unlink account data, sessions, account-linked lookup history, reports, and contribution records associated with the account, unless limited retention is required for security, fraud prevention, abuse investigation, or legal compliance.</p>
+
+    <h2>6. Contact Us</h2>
+    <p>If you have questions about this policy or data deletion, please contact us at <a href="mailto:maali22786@gmail.com">maali22786@gmail.com</a>.</p>
 
     <div class="footer">
-        &copy; 2023 See Caller Identification. All rights reserved.
+        &copy; 2026 See Caller Identification. All rights reserved.
     </div>
 </body>
 </html>
