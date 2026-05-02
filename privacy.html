@@ -20,12 +20,12 @@
 
     <h2>1. Information We Collect</h2>
     <div class="highlight">
-        <strong>Contact Data:</strong> Contact access is optional. If you enable it, the app reads saved contact names and phone numbers to recognize callers saved on your device. When you refresh contacts, we normalize phone numbers and create protected one-way hashes locally before sending contribution records to our backend.
+        <strong>Contact Data:</strong> Contact access is required for saved-caller matching and for improving See Caller's shared caller identification system. If you allow contacts, the app reads saved contact names and phone numbers to recognize callers saved on your device. When contacts refresh, we normalize phone numbers and create protected one-way hashes locally before sending contribution records to our backend.
     </div>
     <p>We may collect or process the following data:</p>
     <ul>
         <li><strong>Account phone number:</strong> Used for phone authentication, account access, and account deletion requests.</li>
-        <li><strong>Contact contribution data:</strong> Contact display names or caller labels and hashed phone-number identifiers may be sent to improve shared caller lookup. Raw contact phone numbers are not intended to be stored by our backend.</li>
+        <li><strong>Contact contribution data:</strong> Contact display names or caller labels and hashed phone-number identifiers are sent when contacts are refreshed to improve shared caller lookup. Raw contact phone numbers are not intended to be stored by our backend.</li>
         <li><strong>Caller lookup data:</strong> Phone-number hashes, lookup results, caller labels, confidence signals, reports, and lookup history may be stored to provide caller identification and abuse reporting features.</li>
         <li><strong>Device/session data:</strong> Installation identifier, platform, app version, and device model may be used for authentication, session security, diagnostics, and fraud prevention.</li>
         <li><strong>Notifications:</strong> Notification permission is used to show incoming caller identification results.</li>
@@ -34,8 +34,8 @@
     <h2>2. How We Use Data</h2>
     <ul>
         <li><strong>Caller identification:</strong> Protected phone identifiers and caller labels are used to match incoming or manually entered numbers with available caller information.</li>
-        <li><strong>Saved caller matching:</strong> If contacts are enabled, local contact data helps identify callers already saved on your device.</li>
-        <li><strong>Shared caller index:</strong> Contact contribution records and reports may improve caller lookup for users when a reliable signal is available.</li>
+        <li><strong>Saved caller matching:</strong> Contact access lets See Caller identify incoming callers already saved on your device.</li>
+        <li><strong>Shared caller index:</strong> Contact contribution records and reports improve caller lookup for users when a reliable signal is available.</li>
         <li><strong>Account management:</strong> Your phone number is used to identify your account so you can sign in, manage sessions, and request deletion.</li>
         <li><strong>Security and reliability:</strong> Device/session data helps protect accounts, maintain service integrity, and troubleshoot issues.</li>
     </ul>
@@ -45,7 +45,7 @@
 
     <h2>4. Permissions</h2>
     <ul>
-        <li><strong>Contacts:</strong> Optional. Used for saved caller matching and optional contribution refreshes.</li>
+        <li><strong>Contacts:</strong> Required for saved-caller matching and shared caller lookup improvement. You can still access account controls, privacy information, and deletion tools without granting contacts.</li>
         <li><strong>Notifications:</strong> Optional but recommended. Used to display incoming caller alerts.</li>
         <li><strong>Caller ID service:</strong> Android Call Screening access is used to inspect incoming numbers and show caller identification results. The app does not request Call Log or SMS permissions.</li>
     </ul>
